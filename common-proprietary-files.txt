@@ -116,6 +116,7 @@ vendor/lib/libRSDriver_adreno.so
 vendor/lib/librs_adreno.so
 vendor/lib/librs_adreno_sha1.so
 vendor/lib/libsc-a3xx.so
+vendor/lib/libuiblur.so
 
 # Graphics firmware
 etc/firmware/vidc_1080p.fw
@@ -162,6 +163,7 @@ vendor/lib/libtime_genoff.so
 
 # Widevine
 lib/libdrmdecrypt.so
+lib/liboemcrypto.so
 vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/libwvdrm_L1.so
 vendor/lib/libwvm.so
