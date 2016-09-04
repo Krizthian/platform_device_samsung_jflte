@@ -29,4 +29,3 @@ $(call inherit-product, device/samsung/jflte/full_jflte.mk)
 $(call inherit-product, vendor/slim/config/common.mk)
 
 PRODUCT_NAME := slim_jflte
-  
