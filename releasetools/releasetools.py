@@ -1,5 +1,6 @@
 # Copyright (C) 2012 The Android Open Source Project
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2015-2017 The JDCTeam
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -80,3 +81,8 @@ def FullOTA_InstallEnd(info):
   info.script.AppendExtra('package_extract_file("boot.img", "/tmp/boot.img");')
   info.script.AppendExtra('assert(run_program("/sbin/sh", "/tmp/install/etc/loki.sh") == 0);')
   info.script.Unmount("/system")
+
+def FullOTA_PostValidate(info):
+    info.script.AppendExtra('run_program("/tmp/install/bin/e2fsck_static", "-fy", "/dev/block/platform/msm_sdcc.1/by-name/system");');
+    info.script.AppendExtra('run_program("/tmp/install/bin/resize2fs_static", "/dev/block/platform/msm_sdcc.1/by-name/system");');
+    info.script.AppendExtra('run_program("/tmp/install/bin/e2fsck_static", "-fy", "/dev/block/platform/msm_sdcc.1/by-name/system");');

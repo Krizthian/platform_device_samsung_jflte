@@ -114,6 +114,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SamsungDoze
 
+# Filesystem tools
+PRODUCT_PACKAGES += \
+    e2fsck_static \
+    resize2fs_static
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:/system/etc/gps.conf \
