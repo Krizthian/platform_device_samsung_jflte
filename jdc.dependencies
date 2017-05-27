@@ -1,0 +1,17 @@
+[
+  {
+    "repository": "AOSP-JF-MM/platform_device_samsung_qcom-common",
+    "target_path": "device/samsung/qcom-common",
+    "branch":      "aosp-7.1.2"
+  },
+  {
+    "repository": "AOSP-JF-MM/platform_kernel_samsung_jf",
+    "target_path": "kernel/samsung/jf",
+    "branch":      "aosp-7.1.2"
+  },
+  {
+    "repository": "AOSP-JF-MM/proprietary_vendor_samsung",
+    "target_path": "vendor/samsung",
+    "branch":      "aosp-7.1.2"
+  }
+]
