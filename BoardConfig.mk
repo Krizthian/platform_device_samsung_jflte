@@ -141,7 +141,7 @@ TARGET_INIT_VENDOR_LIB := libinit_jflte
 TARGET_LIBINIT_DEFINES_FILE := $(COMMON_PATH)/init/init_jflte.cpp
 
 # WebView Beta
-PREBUILT_WEBVIEW_VERSION := beta
+PREBUILT_WEBVIEW_VERSION := chromium
 
 # Wifi module
 BOARD_WLAN_DEVICE := bcmdhd
