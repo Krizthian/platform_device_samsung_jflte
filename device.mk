@@ -107,8 +107,8 @@ PRODUCT_PACKAGES += \
     libqdutils \
     libqdMetaData
 
-# Doze
-PRODUCT_PACKAGES += \
+# Doze (DO NOT BUILD FOR NOW)
+# PRODUCT_PACKAGES += \
     SamsungDoze
 
 # GPS
