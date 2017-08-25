@@ -220,10 +220,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:system/etc/thermal-engine.conf \
     $(LOCAL_PATH)/configs/thermal-engine-8064ab.conf:system/etc/thermal-engine-8064ab.conf
 
-# Stlport
-PRODUCT_PACKAGES += \
-    libstlport
-
 # Device specific applications
 PRODUCT_PACKAGES += \
     SamsungServiceMode \
