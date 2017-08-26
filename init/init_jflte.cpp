@@ -38,12 +38,11 @@
 #include "util.h"
 #include <string>
 
-namespace android {
-namespace init {
-
 void gsm_properties();
 void cdma_properties(int sub);
 void r970_properties();
+
+using android::base::GetProperty;
 
 void property_override(char const prop[], char const value[])
 {
@@ -61,12 +60,12 @@ void vendor_load_properties()
     std::string platform;
     std::string bootloader;
 
-    platform = android::base::GetProperty("ro.board.platform", "");
+    platform = GetProperty("ro.board.platform", "");
 
     if (platform == "")
         return;
 
-    bootloader = android::base::GetProperty("ro.bootloader", "");
+    bootloader = GetProperty("ro.bootloader", "");
 
     if (bootloader.find("I337M") != std::string::npos) {
         /* jfltecan */
@@ -238,7 +237,4 @@ void r970_properties()
     property_set("ro.config.combined_signal", "true");
     property_set("ro.gsm.data_retry_config", "max_retries=infinite,0,0,60000,120000,480000,900000");
     property_set("DEVICE_PROVISIONED", "1");
-}
-
-}
 }
