@@ -10,6 +10,11 @@
     "branch":      "aosp-8.0-test"
   },
   {
+    "repository": "AOSP-JF-MM/platform_packages_apps_STweaks",
+    "target_path": "packages/apps/STweaks",
+    "branch":      "aosp-8.0-test"
+  },
+  {
     "repository": "AOSP-JF-MM/proprietary_vendor_samsung",
     "target_path": "vendor/samsung",
     "branch":      "aosp-8.0-test"
