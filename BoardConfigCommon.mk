@@ -27,6 +27,8 @@
 
 COMMON_PATH := device/samsung/jf-common
 
+TARGET_SPECIFIC_HEADER_PATH += device/samsung/jflte/include
+
 # Platform
 TARGET_BOARD_PLATFORM := msm8960
 
@@ -119,6 +121,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # RIL
+BOARD_PROVIDES_LIBRIL := true
 BOARD_RIL_CLASS := ../../../$(COMMON_PATH)/ril
 USE_DEVICE_SPECIFIC_DATASERVICES := true
 
