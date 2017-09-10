@@ -32,6 +32,8 @@ TARGET_OTA_ASSERT_DEVICE := jflte,jfltexx,i9505,GT-I9505,jgedlte,i9505g,GT-I9505
 
 COMMON_PATH := device/samsung/jflte
 
+TARGET_SPECIFIC_HEADER_PATH += device/samsung/jflte/include
+
 # Platform
 TARGET_BOARD_PLATFORM := msm8960
 
@@ -128,7 +130,9 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
+
 # RIL
+BOARD_PROVIDES_LIBRIL := true
 BOARD_RIL_CLASS := ../../../$(COMMON_PATH)/ril
 
 # SELinux
