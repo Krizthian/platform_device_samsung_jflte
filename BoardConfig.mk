@@ -139,6 +139,10 @@ BOARD_RIL_CLASS := ../../../$(COMMON_PATH)/ril
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
 
+ifeq ($(WITH_TWRP),true)
+ -include device/samsung/jflte/twrp.mk
+endif
+
 # Vendor Init
 TARGET_INIT_VENDOR_LIB := libinit_jflte
 TARGET_LIBINIT_DEFINES_FILE := $(COMMON_PATH)/init/init_jflte.cpp
