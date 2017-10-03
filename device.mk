@@ -217,6 +217,10 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     ueventd.qcom.rc
 
+# SHIM Libs
+PRODUCT_PACKAGES += \
+    libshim_atomic
+
 # SPN override
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/etc/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
