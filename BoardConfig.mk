@@ -27,6 +27,9 @@
 # inherit from the proprietary version
 -include vendor/samsung/jf-common/BoardConfigVendor.mk
 
+# ADB
+TARGET_USES_LEGACY_ADB_INTERFACE := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := jflte,jfltexx,i9505,GT-I9505,jgedlte,i9505g,GT-I9505G,jfltevzw,jfltespr,jflterefreshspr,jfltetmo,jfltecri,jfltecsp,jflteatt,jfltecan,jfltetfnatt,jfltetfntmo,jflteusc,jfltezm
 
