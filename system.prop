@@ -54,7 +54,7 @@ persist.radio.fill_eons=1
 persist.radio.use_se_table_only=1
 ro.telephony.mms_data_profile=5
 ro.ril.telephony.mqanelements=4
-ro.telephony.ril_class=jflteRIL
+rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
 
 # Tethering
 net.tethering.noprovisioning=true
