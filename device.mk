@@ -119,10 +119,10 @@ PRODUCT_PACKAGES += \
     e2fsck_static \
     resize2fs_static
 
-# GPS
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps.conf:/system/etc/gps.conf \
-    $(LOCAL_PATH)/configs/sap.conf:/system/etc/sap.conf
+# GPS HAL
+PRODUCT_PACKAGES += \
+    gps.msm8960 \
+    gps.conf
 
 # HIDL
 $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
