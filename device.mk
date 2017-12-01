@@ -156,7 +156,7 @@ PRODUCT_PACKAGES += \
 
 # LEDify
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/bin/ledify:system/bin/ledify
+    vendor/aosp/prebuilt/common/bin/ledify:$(TARGET_COPY_OUT_VENDOR)/bin/ledify
 
 # Loki
 PRODUCT_PACKAGES += \
