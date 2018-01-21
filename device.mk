@@ -96,10 +96,6 @@ PRODUCT_PACKAGES += \
     camera.msm8960 \
     SnapdragonCamera
 
-# Custom JDCTeam packages
-PRODUCT_PACKAGES += \
-    Toolbox
-
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8960 \
@@ -109,10 +105,6 @@ PRODUCT_PACKAGES += \
     memtrack.msm8960 \
     libqdutils \
     libqdMetaData
-
-# Doze
-PRODUCT_PACKAGES += \
-    SamsungDoze
 
 # Filesystem tools
 PRODUCT_PACKAGES += \
@@ -153,17 +145,6 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     lights.MSM8960
-
-# LEDify
-PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/bin/ledify:$(TARGET_COPY_OUT_VENDOR)/bin/ledify
-
-# Loki
-PRODUCT_PACKAGES += \
-    loki_tool \
-    loki.sh \
-    loki_bootloaders \
-    recovery-transform.sh
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -233,8 +214,7 @@ PRODUCT_COPY_FILES += \
 
 # Device specific applications
 PRODUCT_PACKAGES += \
-    SamsungServiceMode \
-    STweaks
+    SamsungServiceMode
 
 # Wifi
 PRODUCT_PACKAGES += \

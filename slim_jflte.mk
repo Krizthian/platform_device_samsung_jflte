@@ -22,8 +22,21 @@
 # lines, full and maguro, hence its name.
 #
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+
 # Inherit from jflte device
 $(call inherit-product, device/samsung/jflte/full_jflte.mk)
 
 # Inherit our stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
+
+# Device identifier. This must come after all inclusions
+PRODUCT_NAME := slim_jflte
+PRODUCT_DEVICE := jflte
+PRODUCT_BRAND := samsung
+PRODUCT_MANUFACTURER := samsung
+PRODUCT_MODEL := GT-I9505
+
+
