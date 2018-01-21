@@ -135,8 +135,8 @@ include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += device/samsung/jflte/sepolicy
 
 # Vendor Init
-TARGET_INIT_VENDOR_LIB := libinit_jflte
-TARGET_LIBINIT_DEFINES_FILE := device/samsung/jflte/init/init_jflte.cpp
+#TARGET_INIT_VENDOR_LIB := libinit_jflte
+#TARGET_LIBINIT_DEFINES_FILE := device/samsung/jflte/init/init_jflte.cpp
 
 # WebView Beta
 PREBUILT_WEBVIEW_VERSION := chromium
