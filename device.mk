@@ -146,6 +146,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     lights.MSM8960
 
+# Loki
+PRODUCT_PACKAGES += \
+	loki_tool \
+	loki.sh \
+	loki_bootloaders \
+	recovery-transform.sh
+
 # Media
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
@@ -183,12 +190,6 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxQcelp13Enc \
     libstagefrighthw
-
-# OTA Updates
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.ota.romname=AOSP-JF-OREO \
-    ro.ota.version=$(shell date -u +%Y%m%d) \
-    ro.ota.manifest=https://romhut.com/roms/aosp-jf-oreo/ota.xml
 
 # Qualcomm
 PRODUCT_PACKAGES += \

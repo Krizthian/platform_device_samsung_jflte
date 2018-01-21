@@ -43,7 +43,7 @@ TARGET_CPU_VARIANT := krait
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
-TARGET_BOARD_INFO_FILE := $(COMMON_PATH)/board-info.txt
+TARGET_BOARD_INFO_FILE := device/samsung/jflte/board-info.txt
 
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 zcache msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.selinux=permissive
@@ -61,9 +61,9 @@ BOARD_HAVE_SAMSUNG_CSDCLIENT := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/jflte/bluetooth
 BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY := false
-BOARD_CUSTOM_BT_CONFIG := $(COMMON_PATH)/bluetooth/vnd_jf.txt
+BOARD_CUSTOM_BT_CONFIG := device/samsung/jflte/bluetooth/vnd_jf.txt
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
@@ -92,7 +92,7 @@ BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 TARGET_NO_RPC := true
 
 # Includes
-TARGET_SPECIFIC_HEADER_PATH += $(COMMON_PATH)/include
+TARGET_SPECIFIC_HEADER_PATH += device/samsung/jflte/include
 
 # Legacy Hacks
 MALLOC_SVELTE := true
@@ -118,25 +118,25 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_POWERHAL_VARIANT := qcom
 
 # Properties (reset them here, include more in device if needed)
-TARGET_SYSTEM_PROP := $(COMMON_PATH)/system.prop
+TARGET_SYSTEM_PROP := device/samsung/jflte/system.prop
 
 # Recovery
 TARGET_RECOVERY_DENSITY := hdpi
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/samsung/jflte/rootdir/etc/fstab.qcom
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/jflte/releasetools
 
 # RIL
 BOARD_PROVIDES_LIBRIL := true
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += device/samsung/jflte/sepolicy
 
 # Vendor Init
 TARGET_INIT_VENDOR_LIB := libinit_jflte
-TARGET_LIBINIT_DEFINES_FILE := $(COMMON_PATH)/init/init_jflte.cpp
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/jflte/init/init_jflte.cpp
 
 # WebView Beta
 PREBUILT_WEBVIEW_VERSION := chromium
